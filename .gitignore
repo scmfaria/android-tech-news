@@ -1,0 +1,21 @@
+# Local IDEA workspace
+.idea/workspace.xml
+
+# Gradle cache
+.gradle
+
+# IDEA/Android Studio project files, because
+# the project can be imported from settings.gradle
+.idea
+*.iml
+
+# Eclipse project files
+.classpath
+.project
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# generated files
+bin/
+build/
