@@ -32,10 +32,10 @@ class VisualizaNoticiaActivity : AppCompatActivity() {
         setContentView(R.layout.activity_visualiza_noticia)
         title = TITULO_APPBAR
         verificaIdDaNoticia()
-    }
 
-    override fun onResume() {
-        super.onResume()
+        // com a adição do LiveData no DAO, não é mais necessario chamar essa função no onResume,
+        // que é onde ele sempre chama, pois agora sempre que tiver uma nova alteração, a tela ja vai ser
+        // notificada e atualizada, sem precisar chamar no onResume novamente.
         buscaNoticiaSelecionada()
     }
 

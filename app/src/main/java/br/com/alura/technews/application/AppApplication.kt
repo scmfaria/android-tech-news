@@ -1,4 +1,4 @@
-package br.com.alura.technews
+package br.com.alura.technews.application
 
 import android.app.Application
 import org.koin.android.ext.koin.androidContext
