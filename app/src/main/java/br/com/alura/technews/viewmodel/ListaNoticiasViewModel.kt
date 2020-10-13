@@ -6,6 +6,7 @@ import br.com.alura.technews.model.Noticia
 import br.com.alura.technews.repository.NoticiaRepository
 import br.com.alura.technews.repository.Resource
 
+// ViewModel é a classe que mantem os dados da tela
 class ListaNoticiasViewModel(private val repository: NoticiaRepository) : ViewModel() {
 
 //    LiveData -> dados imutaveis (so acesso a leitura)

@@ -8,11 +8,9 @@ import br.com.alura.technews.repository.Resource
 
 class VisualizaNoticiaViewModel(
     private val repository: NoticiaRepository,
-    private val id: Long) : ViewModel()  {
+    id: Long) : ViewModel()  {
 
-    private val noticiaEcnontrada = buscaPorId()
-
-    fun buscaPorId() = repository.buscaPorId(id)
+    val noticiaEcnontrada = repository.buscaPorId(id)
 
     fun remove(): LiveData<Resource<Void?>> {
         return noticiaEcnontrada.value?.run { // dentro desse escopo encontra uma noticia que nao é nula
